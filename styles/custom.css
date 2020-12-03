@@ -1,0 +1,75 @@
+html,
+body {
+  width: 100vw;
+  height: 100vh;
+
+  background-color: #f0f0f7 !important;
+
+  overflow-x: hidden;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  padding: 2rem 0;
+}
+
+.container a {
+  padding: 0.5rem 1rem;
+
+  border-radius: 0.2rem;
+  background-color: #00a2ff;
+  color: #fff;
+
+  cursor: pointer;
+}
+
+.container a.danger {
+  background-color: #ff0023;
+}
+
+.container a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+.container form {
+  width: 50%;
+}
+
+.container .buttons-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.container .buttons-container button + button {
+  margin-left: 0.5rem;
+}
+
+.container section {
+  margin-top: 5rem;
+}
+
+.container table {
+  background-color: #fff;
+  box-shadow: 3px 3px 8px 0 #ddd;
+}
+
+.container table td {
+  padding: 1rem;
+
+  text-align: center;
+}
+
+.container table thead td {
+  font-weight: bold;
+}
+
+.container table thead tr,
+table tbody tr:nth-child(even) {
+  background-color: #f2f7fd;
+}
